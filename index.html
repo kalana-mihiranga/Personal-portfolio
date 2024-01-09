@@ -291,16 +291,26 @@ Maven , Spring ,JavaScript , parcel ,firebase</p><a href="https://github.com/kal
             
 
             <div class="frm-wrapper">
-                <form action="#contact" autocomplete="off">
+                <form id="myForm" action="https://script.google.com/macros/s/AKfycbz0j-a5uo2dCDOqxYsilrEe-kaH5YgY6lojg2op2kBNyYv3XBMd4Twj2mBwVKv1W8WR/exec" method="post" autocomplete="off">
                     <div class="input-box">
-                        <input type="text" name="name" placeholder="Eg: Kalana Mihiranga">
-                        <input type="email" name="email" placeholder="Eg: kalanamihiranga97@gmail.com">
-                        <input type="number" name="Mobile Number" placeholder="Eg: 0766307945">
+                        <input type="text" name="Name" placeholder="Eg: Kalana Mihiranga" required>
+                        <input type="email" name="Email" placeholder="Eg: kalanamihiranga97@gmail.com" required>
+                        <input type="number" name="MobileNumber" placeholder="Eg: 0766307945">
                     </div>
-                    <textarea name="message" cols="30" rows="12" placeholder="Type your message here!"></textarea>
+                    <textarea name="Message" cols="30" rows="12" placeholder="Type your message here!" required></textarea>
+                    
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <p id="modalMessage"></p>
+                        </div>
+                      </div>
+
                     <button type="submit" class="btn">Submit</button>
                     
                 </form>
+                <!-- Modal HTML -->
+
                
             </div>
         </div>
@@ -309,3 +319,4 @@ Maven , Spring ,JavaScript , parcel ,firebase</p><a href="https://github.com/kal
     
 </body>
 </html>
+
