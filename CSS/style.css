@@ -7,7 +7,7 @@
 
 :root {
     --text-color: #fff;
-    --main-color: #1cdce8;
+    --main-color: #39c4ce;
     --bg-color-primary: #0e141f;
     --bg-color-secondary: #1b2437;
 }
@@ -20,6 +20,10 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    
+
     background-color: var(--bg-color-primary);
     scroll-snap-type: y mandatory;
 }
@@ -540,6 +544,8 @@ input::-webkit-inner-spin-button {
 
 /* Make the site responsi - Selected break points */
 
+
+
 @media all and (min-width: 1024px) {
 
 }
@@ -551,7 +557,7 @@ input::-webkit-inner-spin-button {
 @media all and (max-width: 1023px) {
 }
 
-@media all and (max-width: 575px) {
+/* @media all and (max-width: 575px) {
 
-}
+} */
 
